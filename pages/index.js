@@ -38,7 +38,7 @@ const Home = () => {
             <h1>Justin<br></br>Matthew</h1>
           </div>
           <div className="role">
-            <h3>UX Designer</h3>
+            <h3>UX Designer /<br/>Software Developer</h3>
               <button><a href="https://www.linkedin.com/in/justincomplex/">View LinkedIn</a></button>
           </div>
         </div>
