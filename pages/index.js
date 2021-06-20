@@ -192,7 +192,7 @@ const Home = () => {
 
           h1 {
             font-size: 4rem;
-            margin-bottom: .5rem;
+            margin-bottom: .4rem;
           }
 
           h3 {
