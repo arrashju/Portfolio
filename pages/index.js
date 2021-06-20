@@ -55,7 +55,7 @@ const Home = () => {
       </div>
       <style jsx>{`
         .hero {
-          height: 1041px;
+          height: 100vh;
           background: linear-gradient(
             256.91deg,
             rgba(104, 104, 104, 0.59) -4.41%,
@@ -143,35 +143,57 @@ const Home = () => {
         }
 
         .introduction h3 {
-          margin: 0 0 7px;
+          margin: 0 0 .438rem;
         }
 
         .introduction h4 {
-          margin: 15px 0 7px;
+          margin: 0 0 .438rem;
+        }
+
+        .introduction {
+          margin: .938rem 0 0;
         }
 
         .role h3 {
-          margin: 0 0 30px;
+          margin: 0 0 1.875rem;
         }
 
         .img {
           position: absolute;
           bottom: 0;
           z-index: 2;
+          max-width: 100%;
+          
         }
 
-        @media (max-width: 500px) {
+        @media (max-width: 580px) {
           .img {
-            width: 100%;
+            max-height: 47vh;
+            max-width: 100%;
           }
         }
 
-        @media (min-width: 500px) {
+        @media (min-width: 580px) {
           .img {
-            width: 58rem;
-            height: 58rem;
-            left: 50%;
+            max-width: 58rem;
+            max-height: 58rem;
             margin-left: -29rem;
+            left: 50%;
+          }
+        }
+
+        @media (max-width: 411px) {
+          h4 {
+            display: none;
+          }
+
+          h1 {
+            font-size: 4rem;
+            margin-bottom: .5rem;
+          }
+
+          h3 {
+            font-size: 2rem;
           }
         }
 
@@ -205,10 +227,10 @@ const Home = () => {
           }
         }
 
-        @media (min-width: 1000px) {
+        @media (min-width: 1366px) {
           .description {
-            bottom: 30%;
-            top: 30%;
+            bottom: 20%;
+            top: 20%;
           }
 
           .introduction {
