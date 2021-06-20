@@ -3,16 +3,16 @@ import Image from 'next/image'
 import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 import { useState, useEffect } from 'react'
-import useWindowSize from '../hooks/useWindowSize'
+//import useWindowSize from '../hooks/useWindowSize'
 
 const Home = () => {
 
-  const size = useWindowSize();
+  /*const size = useWindowSize();
   const [width, setWidth] = useState(size.width);
 
   useEffect(() => {
     setWidth({width: size.width});
-  }, [size])
+  }, [size])*/
 
   return (
     <>
@@ -43,8 +43,16 @@ const Home = () => {
           </div>
         </div>
         {/*<object className="scroll" data="scroll.svg"> </object>*/}
+        <div className="img">
+          <Image 
+            src='/photo.png'
+            alt="Justin photo"
+            className="img"
+            width={2048}
+            height={2038}
+          />        
+        </div>
       </div>
-      <img src="photo.png"></img>
       <style jsx>{`
         .hero {
           height: 1041px;
@@ -146,20 +154,20 @@ const Home = () => {
           margin: 0 0 30px;
         }
 
-        img {
+        .img {
           position: absolute;
           bottom: 0;
           z-index: 2;
         }
 
         @media (max-width: 500px) {
-          img {
+          .img {
             width: 100%;
           }
         }
 
         @media (min-width: 500px) {
-          img {
+          .img {
             width: 58rem;
             height: 58rem;
             left: 50%;
