@@ -117,7 +117,7 @@ const Home = () => {
           border: none;
           font-size: 16px;
           margin-bottom: 0;
-          box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.25);
+          box-shadow: 2px 2px 6px rgba(47, 47, 89, 0.25);
         }
 
         button:hover {
@@ -136,7 +136,7 @@ const Home = () => {
           
           color: #FFFFFF;
           background: #A1A1A1;
-          filter: drop-shadow(2px 2px 6px rgba(0, 0, 0, 0.25));
+          box-shadow: 2px 2px 6px rgba(47, 47, 89, 0.25);
 
           width: 3.5rem;
           height: 3.5rem;
