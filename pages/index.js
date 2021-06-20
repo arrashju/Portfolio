@@ -22,14 +22,14 @@ const Home = () => {
             <circle cx="3" cy="3" r="3" fill="#FFFFFF"/>
           </svg>
         </div>
-        <ul className="navbar">
+        {/*<ul className="navbar">
           <li>
             <Link href="/"><a>Home</a></Link>
           </li>
           <li>
           <Link href="/"><a>About</a></Link>
           </li>
-        </ul>
+        </ul>*/}
       </div>
       <div className="hero">
         <div className="description">
@@ -116,6 +116,7 @@ const Home = () => {
           border-radius: 83px;
           border: none;
           font-size: 16px;
+          margin-bottom: 0;
         }
 
         button:hover {
@@ -159,7 +160,7 @@ const Home = () => {
         }
 
         .img {
-          position: fixed;
+          position: absolute;
           bottom: 0;
           z-index: 2;
           max-width: 100%;
