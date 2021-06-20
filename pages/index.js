@@ -160,7 +160,7 @@ const Home = () => {
         }
 
         .img {
-          position: absolute;
+          position: fixed;
           bottom: 0;
           z-index: 2;
           max-width: 100%;
