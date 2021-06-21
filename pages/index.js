@@ -17,11 +17,7 @@ const Home = () => {
   return (
     <>
       <div className="nav">
-        <div className="nav-logo">J
-          <svg width="6" height="6" style={{position: "absolute", right: ".5rem", bottom: ".5rem"}}>
-            <circle cx="3" cy="3" r="3" fill="#FFFFFF"/>
-          </svg>
-        </div>
+        <object data="/logo.svg" className="nav-logo" width="52.5" height="56"></object>
         {/*<ul className="navbar">
           <li>
             <Link href="/"><a>Home</a></Link>
@@ -55,7 +51,6 @@ const Home = () => {
       </div>
       <style jsx>{`
         .hero {
-          height: 100vh;
           background: linear-gradient(
             256.91deg,
             rgba(104, 104, 104, 0.59) -4.41%,
@@ -121,25 +116,16 @@ const Home = () => {
         }
 
         button:hover {
-          background: rgba(100%,100%,100%,.1);
           border: 3px solid #343d78;
         }
 
         .nav-logo {
-          font-family: Mukta Mahee;
-          font-style: normal;
-          font-weight: bold;
-          font-size: 2.25rem;
-          line-height: 3.5rem;
-          letter-spacing: 0.05rem;
-          text-align: center;
-          
           color: #FFFFFF;
           background: #A1A1A1;
           box-shadow: 2px 2px 6px rgba(47, 47, 89, 0.25);
 
-          width: 3.5rem;
-          height: 3.5rem;
+          width: 4rem;
+          height: 4rem;
 
           position: absolute;
           left: 1.25rem;
@@ -169,10 +155,20 @@ const Home = () => {
           max-width: 100%;
         }
 
-        @media (max-width: 580px) {
+        @media (max-width: 1024px) {
           .img {
-            max-height: 47vh;
+            max-height: 400px;
             max-width: 100%;
+          }
+
+          .hero {
+            height: 1366px;
+          }
+        }
+
+        @media (min-width: 1024px) {
+          .hero {
+            height: 1366px;
           }
         }
 
@@ -185,14 +181,18 @@ const Home = () => {
           }
         }
 
-        @media (max-width: 411px) {
+        @media (max-width: 414px) {
+          .hero {
+            height: 823;
+          }
+
           h4 {
             display: none;
           }
 
           h1 {
             font-size: 4rem;
-            margin-bottom: .4rem;
+            margin-bottom: .25rem;
           }
 
           h3 {
@@ -226,7 +226,7 @@ const Home = () => {
           }
 
           .introduction {
-            margin-bottom: 5rem;
+            margin-bottom: 3rem;
           }
         }
 
