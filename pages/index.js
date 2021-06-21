@@ -17,7 +17,7 @@ const Home = () => {
   return (
     <>
       <div className="nav">
-        <object data="/logo.svg" className="nav-logo" width="52.5" height="56"></object>
+        <Image src="/logo.png" className="nav-logo" width={52.5} height={56}></Image>
         {/*<ul className="navbar">
           <li>
             <Link href="/"><a>Home</a></Link>
