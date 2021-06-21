@@ -17,7 +17,7 @@ const Home = () => {
   return (
     <>
       <div className="nav">
-        <Image src="/logo.png" className="nav-logo" width={52.5} height={56}></Image>
+          <Image src="/logo.png" width={40} height={43}></Image>
         {/*<ul className="navbar">
           <li>
             <Link href="/"><a>Home</a></Link>
@@ -184,6 +184,11 @@ const Home = () => {
         @media (max-width: 414px) {
           .hero {
             height: 823;
+          }
+
+          .nav-logo {
+            max-width: 41px;
+            max-height: 44px;
           }
 
           h4 {
