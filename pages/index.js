@@ -335,6 +335,12 @@ const Home = () => {
             height: 40px;
           }
         }
+
+      @media (max-width: 250px) {
+        .img {
+          width: 100%;
+        }
+      }
       `}</style>
     </>
   )
