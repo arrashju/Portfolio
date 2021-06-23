@@ -66,7 +66,7 @@ const Home = () => {
         
 
         .nav {
-          position: fixed;
+          position: absolute;
           padding: 1.25rem;
           width: 100%;
           z-index: 1;
