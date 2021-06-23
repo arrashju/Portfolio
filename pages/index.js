@@ -79,12 +79,6 @@ const Home = () => {
         }
 
         .hero {
-          background: linear-gradient(
-            256.91deg,
-            rgba(104, 104, 104, 0.59) -4.41%,
-            #252525 108.91%
-          );
-          background-repeat: no-repeat;
           min-height: 900px;
           max-height: 100vh;
           padding-top: 20px;
