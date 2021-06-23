@@ -241,7 +241,7 @@ const Home = () => {
         
         @media (min-width: 481px) and (max-width: 767px) {
           html {
-            font-size: 4em;
+            font-size: 3.5em;
           }
 
           .img {
@@ -270,7 +270,7 @@ const Home = () => {
         {//Device = Most of the Smartphones Mobiles (Portrait)}
         {//Screen = B/w 320px to 479px}
         
-        @media (min-width: 320px) and (max-width: 480px) {
+        @media (min-width: 375px) and (max-width: 480px) {
           html {
             font-size: 3.5em;
           }
@@ -295,7 +295,45 @@ const Home = () => {
           .hero {
             min-height: 812px;
             max-height: 100vh;
-          }          
+          }    
+          
+          button {
+            width: 170px;
+            height: 40px;
+          }
+        }
+        
+        @media (max-width: 375px) {
+          html {
+            font-size: 2.5em;
+          }
+
+          .description {
+            position: static;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            height: 300px;
+          }
+
+          .hero {
+            min-height: 550px;
+            max-height: 100vh;
+          }
+    
+          .introduction {
+            text-align: center;
+          }
+
+          .img {
+            width: 250px;
+          }
+
+          button {
+            width: 170px;
+            height: 40px;
+          }
         }
       `}</style>
     </>
