@@ -63,7 +63,6 @@ const Home = () => {
             font-size: 7.5em;
           }
         }
-        
 
         .nav {
           position: absolute;
@@ -127,6 +126,7 @@ const Home = () => {
 
         .role h3 {
           font-size: 3rem;
+          margin: 0 0 20px 0;
         }
 
         button {
@@ -139,7 +139,7 @@ const Home = () => {
           font-size: 18px;
           color: black;
           font-weight: bold;
-          margin-bottom: 0;
+          margin: 0;
         }
 
         button:hover {
