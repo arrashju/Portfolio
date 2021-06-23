@@ -86,7 +86,7 @@ const Home = () => {
             #252525 108.91%
           );
           background-repeat: no-repeat;
-          min-height: 800px;
+          min-height: 900px;
           max-height: 100vh;
           padding-top: 20px;
           position: relative;
@@ -103,6 +103,7 @@ const Home = () => {
           flex-direction: row;
           justify-content: space-around;
           align-items: center;
+          padding-top: 20px;
         }
 
         .introduction {
@@ -117,7 +118,7 @@ const Home = () => {
 
         .introduction h4 {
           font-size: 2.25rem;
-          margin: 0 0 10px 0;
+          margin: 0 0 8px 0;
         }
 
         .role {
@@ -126,7 +127,6 @@ const Home = () => {
 
         .role h3 {
           font-size: 3rem;
-          margin: 0 0 30px 0;
         }
 
         button {
@@ -261,6 +261,10 @@ const Home = () => {
             text-align: center;
           }
 
+          .role {
+            margin-bottom: 20px;
+          }
+
           .hero {
             min-height: 812px;
             max-height: 100vh;
@@ -277,6 +281,10 @@ const Home = () => {
 
           .img {
             width: 375px;
+          }
+
+          .role {
+            margin-bottom: 20px;
           }
 
           .description {
@@ -324,6 +332,10 @@ const Home = () => {
     
           .introduction {
             text-align: center;
+          }
+
+          .role {
+            margin-bottom: 20px;
           }
 
           .img {
