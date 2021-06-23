@@ -343,14 +343,21 @@ const Home = () => {
           }
 
           button {
-            width: 170px;
-            height: 40px;
+            width: 160px;
+            height: 34px;
+            font-size: 13px;
           }
         }
 
       @media (max-width: 250px) {
         .img {
           width: 100%;
+        }
+
+        button {
+          width: 160px;
+          height: 34px;
+          font-size: 13px;
         }
       }
       `}</style>
