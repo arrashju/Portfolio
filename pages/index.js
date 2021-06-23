@@ -17,7 +17,9 @@ const Home = () => {
   return (
     <>
       <div className="nav">
-          <Image src="/logo.png" width={40} height={43}></Image>
+          <div className="nav-logo">
+            <Image src="/logo.png" width={66} height={70.43}></Image>
+          </div>
         {/*<ul className="navbar">
           <li>
             <Link href="/"><a>Home</a></Link>
@@ -30,26 +32,54 @@ const Home = () => {
       <div className="hero">
         <div className="description">
           <div className="introduction">
-            <h4>Hi, I am</h4>
+            <h4 className="greeting">Hi, I am</h4>
             <h1>Justin<br></br>Matthew</h1>
           </div>
           <div className="role">
             <h3>UX Designer /<br/>Software Developer</h3>
-              <button><a href="https://www.linkedin.com/in/justincomplex/">View LinkedIn</a></button>
+            <a href="https://www.linkedin.com/in/justincomplex/"><button>View LinkedIn</button></a>
           </div>
         </div>
-        {/*<object className="scroll" data="scroll.svg"> </object>*/}
         <div className="img">
           <Image 
             src='/photo.png'
             alt="Justin photo"
-            className="img"
+            style={{zIndex: 2}}
             width={2048}
             height={2038}
           />        
         </div>
       </div>
       <style jsx>{`
+
+        * {
+          color: #fff;
+          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+            Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+        }
+
+        @media (min-width: 1025px) and (max-width: 1280px) {
+          html {
+            font-size: 7.5em;
+          }
+        }
+        
+
+        .nav {
+          position: fixed;
+          padding: 1.25rem;
+          width: 100%;
+          z-index: 1;
+        }
+
+        .nav-logo {
+          width: 4em;
+          height 4em;
+          position: absolute;
+          left: 1.25rem;
+          top: 1.25rem;
+        }
+
         .hero {
           background: linear-gradient(
             256.91deg,
@@ -57,193 +87,215 @@ const Home = () => {
             #252525 108.91%
           );
           background-repeat: no-repeat;
-          text-align: center;
+          min-height: 800px;
+          max-height: 100vh;
+          padding-top: 20px;
+          position: relative;
           z-index: 0;
-        }
-
-        .scroll {
-          position: absolute;
-          bottom: 30px;
-          left: 50%;
-          z-index: 4;
-        }
-
-        .nav {
-          position: fixed;
-          padding: 1.25rem;
-          width: 100%;
-        }
-
-        .navbar {
           text-align: center;
         }
 
-        ul {
-          list-style: none;
-          margin: 0;
-          padding: 0;
-        }
-        
-        li {
-          display: inline-block;
-          margin: 1.25rem;
-          font-size: 18px;
+        .description {
+          width: 100%;
+          position: absolute;
+          font-weight: bold;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          align-items: center;
         }
 
-        h1 {
+        .introduction {
+          left: 155px;
+          text-align: left;
+        }
+
+        .introduction h1 {
           font-size: 6rem;
           margin: 0;
         }
-        
-        h3 {
-          font-size: 3rem;
+
+        .introduction h4 {
+          font-size: 2.25rem;
+          margin: 0 0 10px 0;
         }
 
-        h4 {
-          font-size: 2.5rem;
+        .role {
+          right: 155px;
+        }
+
+        .role h3 {
+          font-size: 3rem;
+          margin: 0 0 30px 0;
         }
 
         button {
-          font-weight: 600;
-          background: #bbbbbb;
-          width: 188px;
-          height: 44px;
-          border-radius: 83px;
-          border: none;
-          font-size: 16px;
-          margin-bottom: 0;
+          width: 206px;
+          height: 47px;
           box-shadow: 2px 2px 6px rgba(47, 47, 89, 0.25);
+          border: none;
+          border-radius: 83px;
+          background: #bbbbbb;
+          font-size: 18px;
+          color: black;
+          font-weight: bold;
+          margin-bottom: 0;
         }
 
         button:hover {
           border: 3px solid #343d78;
-        }
-
-        .nav-logo {
-          color: #FFFFFF;
-          background: #A1A1A1;
-          box-shadow: 2px 2px 6px rgba(47, 47, 89, 0.25);
-
-          width: 4rem;
-          height: 4rem;
-
-          position: absolute;
-          left: 1.25rem;
-          top: 1.25rem;
-        }
-
-        .introduction h3 {
-          margin: 0 0 .438rem;
-        }
-
-        .introduction h4 {
-          margin: 0 0 .438rem;
-        }
-
-        .introduction {
-          margin: .938rem 0 0;
-        }
-
-        .role h3 {
-          margin: 0 0 1.875rem;
+          cursor: pointer;
         }
 
         .img {
-          position: fixed;
+          position: absolute;
           bottom: 0;
           z-index: 2;
-          max-width: 100%;
+          left: 50%;
+          transform: translateX(-50%);
         }
 
-        @media (max-width: 1024px) {
+        @media (min-width: 1281px) {
+          html {
+            font-size: 10em;
+          }
+
           .img {
-            max-height: 400px;
-            max-width: 100%;
+            max-width: 765px;
           }
 
-          .hero {
-            height: 1366px;
+          .description {
+            top: 35%;
           }
-        }
 
-        @media (min-width: 1024px) {
-          .hero {
-            height: 1366px;
+          hero {
+            max-height: 100vh;
           }
         }
+        
+        {//Device = Laptops, Desktops}
+        {//Screen = B/w 1025px to 1280px}
+        
+        @media (min-width: 1025px) and (max-width: 1280px) {
+          html {
+            font-size: 7.5em;
+          }
 
-        @media (min-width: 580px) {
           .img {
-            max-width: 58rem;
-            max-height: 58rem;
-            margin-left: -29rem;
-            left: 50%;
-          }
-        }
-
-        @media (max-width: 414px) {
-          .hero {
-            height: 823;
+            max-width: 553px;
           }
 
-          .nav-logo {
-            max-width: 41px;
-            max-height: 44px;
-          }
-
-          h4 {
-            display: none;
-          }
-
-          h1 {
-            font-size: 4rem;
-            margin-bottom: .25rem;
-          }
-
-          h3 {
-            font-size: 2rem;
-          }
-        }
-
-        @media (min-width: 700px) {
           .description {
-            z-index: 1;
-            position: absolute;
-            top: 25%;
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-          }
-
-          .introduction {
-            text-align: left;
-          }
-        }
-
-        @media (max-width: 700px) {
-          .description {
-            z-index: 1;
-            position: absolute;
-            top: 10%;
-            align-items: center;
-            width: 100%;
-          }
-
-          .introduction {
-            margin-bottom: 3rem;
-          }
-        }
-
-        @media (min-width: 1366px) {
-          .description {
-            bottom: 20%;
             top: 20%;
           }
 
-          .introduction {
-            text-align: left;
+          .hero {
+            max-height: 100vh;
           }
+        }
+        
+        {//Device = Tablets, Ipads (portrait)}
+        {//Screen = B/w 768px to 1024px}
+        
+        @media (min-width: 768px) and (max-width: 1024px) {    
+          html {
+            font-size: 5em;
+          }
+
+          .img {
+            max-width: 553px;
+          }
+
+          .description {
+            top: 20%;
+          }
+
+          .hero {
+            max-height: 100vh;
+          }
+        }
+        
+        {//Device = Tablets, Ipads (landscape)}
+        {//Screen = B/w 768px to 1024px}
+        
+        @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+          html {
+            font-size: 5em;
+          }
+
+          .img {
+            max-width: 553px;
+          }
+
+          .description {
+            top: 20%;
+          }
+
+          .hero {
+            max-height: 100vh;
+          }
+        }
+        
+        {//Device = Low Resolution Tablets, Mobiles (Landscape)}
+        {//Screen = B/w 481px to 767px}
+        
+        @media (min-width: 481px) and (max-width: 767px) {
+          html {
+            font-size: 4em;
+          }
+
+          .img {
+            width: 375px;
+          }
+
+          .description {
+            position: static;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            height: 437px;
+          }
+          
+          .introduction {
+            text-align: center;
+          }
+
+          .hero {
+            min-height: 812px;
+            max-height: 100vh;
+          }
+        }
+        
+        {//Device = Most of the Smartphones Mobiles (Portrait)}
+        {//Screen = B/w 320px to 479px}
+        
+        @media (min-width: 320px) and (max-width: 480px) {
+          html {
+            font-size: 3.5em;
+          }
+
+          .img {
+            width: 375px;
+          }
+
+          .description {
+            position: static;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            height: 437px;
+          }
+          
+          .introduction {
+            text-align: center;
+          }
+
+          .hero {
+            min-height: 812px;
+            max-height: 100vh;
+          }          
         }
       `}</style>
     </>
