@@ -67,8 +67,7 @@ const Home = () => {
 
         .nav {
           position: absolute;
-          padding: 1.25rem;
-          width: 100%;
+          padding: 4em 0;
           z-index: 1;
         }
 
@@ -93,6 +92,7 @@ const Home = () => {
           position: relative;
           z-index: 0;
           text-align: center;
+          margin: 0;
         }
 
         .description {
