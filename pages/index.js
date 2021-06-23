@@ -86,6 +86,7 @@ const Home = () => {
           z-index: 0;
           text-align: center;
           margin: 0;
+          width: 100%;
         }
 
         .description {
@@ -137,7 +138,7 @@ const Home = () => {
         }
 
         button:hover {
-          border: 3px solid #343d78;
+          border: 3px solid #555da2;
           cursor: pointer;
         }
 
