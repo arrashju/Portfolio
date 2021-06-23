@@ -122,6 +122,7 @@ const Home = () => {
         .role h3 {
           font-size: 3rem;
           margin: 0 0 20px 0;
+          line-height: 1.5;
         }
 
         button {
