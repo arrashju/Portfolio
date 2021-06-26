@@ -4,9 +4,9 @@ import '../styles/styles.css'
 function MyApp({ Component, pageProps }) {
   
   return (
-    //<Layout>
+    <Layout>
       <Component {...pageProps} />
-    //</Layout>
+    </Layout>
   )
 }
 

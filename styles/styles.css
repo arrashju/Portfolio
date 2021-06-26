@@ -80,6 +80,11 @@ nav.scroll-down {
   top: -100%;
 }
 
+nav.scroll-up,
+nav:focus-within {
+  top: 0;
+}
+
 .nav-logo {
   position: absolute;
   display: flex;
