@@ -2,23 +2,24 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useState, useEffect } from 'react'
-//import useWindowSize from '../hooks/useWindowSize'
+import { Component } from 'react'
+import useNavScroll from '../hooks/useNavScroll'
 
 const Home = () => {
+  
+  const scroll = useNavScroll();
 
-  /*const size = useWindowSize();
-  const [width, setWidth] = useState(size.width);
   useEffect(() => {
-    setWidth({width: size.width});
-  }, [size])*/
+    console.log(scroll);
+  }, [scroll])
 
   return (
     <>
-      <div className="nav">
+      <nav className={scroll}>
           <div className="nav-logo">
             <Image src="/logo.png" width={66} height={70.43}></Image>
           </div>
-      </div>
+      </nav>
       <div className="hero">
         <div className="description">
           <div className="introduction">

@@ -59,12 +59,25 @@ body {
   margin: 0;
 }
 
-.nav {
-  position: absolute;
-  display: flex;
+nav {
+  position: sticky;
   top: 0;
+  display: flex;
   z-index: 4;
   width: 100%;
+}
+
+nav {
+  /* default styling */
+  transition: top 500ms ease-in-out;
+}
+
+nav.scroll-up {
+  top: 0;
+}
+
+nav.scroll-down {
+  top: -100%;
 }
 
 .nav-logo {
