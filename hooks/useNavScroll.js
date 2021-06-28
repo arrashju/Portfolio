@@ -40,17 +40,25 @@ function useNavScroll() {
         throttleWait = false;
       }, time);
     }
+    
+    const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
 
     // Add event listener
     window.addEventListener('scroll', (event) => {
+      if (mediaQuery && !mediaQuery.matches) {
         throttle(handleNavScroll, 250)
+      }
     });
 
     // Call handler right away so state gets updated with initial nav scroll
     handleNavScroll();
 
     // Remove event listener on cleanup
-    return () => window.addEventListener('scroll', (event) => {throttle(handleNavScroll, 250)});
+    return () => window.addEventListener('scroll', (event) => {
+      if (mediaQuery && !mediaQuery.matches) {
+        throttle(handleNavScroll, 250)
+      }
+    });
   }, []); // Empty array ensures that effect is only run on mount
 
   return navScroll;
