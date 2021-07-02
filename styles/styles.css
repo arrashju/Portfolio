@@ -108,11 +108,12 @@ nav:focus-within {
   align-items: center;
   padding-top: 20px;
   z-index: 5;
+  text-align: center;
 }
 
 .introduction {
   left: 155px;
-  text-align: left;
+  text-align: center;
 }
 
 .introduction h1 {
