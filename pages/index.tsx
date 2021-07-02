@@ -4,14 +4,21 @@ import Link from 'next/link'
 import { useState, useEffect } from 'react'
 import { Component } from 'react'
 import useNavScroll from '../hooks/useNavScroll'
+import useWindowSize from '../hooks/useWindowSize'
 
 const Home = () => {
+
+  const [url, setUrl] = useState("hero.png")
   
   const scroll = useNavScroll();
+  const size = useWindowSize();
+
+  const small = "hero.png"
+  const large = "hero_small.png"
 
   useEffect(() => {
-    console.log(scroll);
-  }, [scroll])
+    size.width > 480 ? setUrl(large) : setUrl(small)
+  }, [size])
 
   return (
     <>
@@ -21,7 +28,7 @@ const Home = () => {
           </div>
       </nav>
       <div className="parallax-container">
-        <div className="hero">
+        <div className="hero" style={{ backgroundImage: `url("${url}")` }}>
           <div className="img">
             <Image 
               src='/photo.png'

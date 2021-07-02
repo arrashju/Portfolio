@@ -94,7 +94,6 @@ nav:focus-within {
   text-align: center;
   margin: 0;
   width: 100%;
-  background-image: url("/hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -312,7 +311,7 @@ Screen = B/w 768px to 1024px*/
   }
 
   .description {
-    top: 10%;
+    top: 15%;
     flex-direction: column;
     text-align: center;
     justify-content: flex-start;
