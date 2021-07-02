@@ -20,7 +20,17 @@ const Home = () => {
             <Image src="/logo.png" width={66} height={70.43}></Image>
           </div>
       </nav>
-      <div className="hero">
+      <div className="parallax-container">
+        <div className="hero">
+          <div className="img">
+            <Image 
+              src='/photo.png'
+              alt="Justin photo"
+              width={2048}
+              height={2038}
+            /> 
+          </div>
+        </div>
         <div className="description">
           <div className="introduction">
             <h4 className="greeting">Hi, I am</h4>
@@ -31,17 +41,8 @@ const Home = () => {
             <Link href="https://www.linkedin.com/in/justincomplex/" passHref={true}><button>View LinkedIn</button></Link>
           </div>
         </div>
-        <div className="img">
-          <Image 
-            src='/photo.png'
-            alt="Justin photo"
-            width={2048}
-            height={2038}
-          />        
-        </div>
       </div>
       <style jsx>{`
-        
       `}</style>
     </>
   )

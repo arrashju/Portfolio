@@ -34,15 +34,6 @@
   }
 }
 
-body {
-  background: linear-gradient(
-    256.91deg,
-    rgba(104, 104, 104, 0.59) -4.41%,
-    #252525 108.91%
-  );
-  background-repeat: no-repeat;
-}
-
 * {
   color: #fff;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
@@ -61,14 +52,11 @@ body {
 
 nav {
   position: fixed;
+  margin: 13px;
   top: 0;
   display: flex;
-  z-index: 4;
+  z-index: 1000;
   width: 100%;
-}
-
-nav {
-  /* default styling */
   transition: top 500ms ease-in-out;
 }
 
@@ -93,15 +81,22 @@ nav:focus-within {
   width: 6em;
 }
 
+.parallax-container {
+}
+
 .hero {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
   min-height: 900px;
   max-height: 100vh;
-  padding-top: 20px;
   z-index: 0;
   text-align: center;
   margin: 0;
   width: 100%;
+  background-image: url("/hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .description {
@@ -113,6 +108,7 @@ nav:focus-within {
   justify-content: space-around;
   align-items: center;
   padding-top: 20px;
+  z-index: 5;
 }
 
 .introduction {
@@ -240,16 +236,16 @@ Screen = B/w 768px to 1024px*/
   }
 
   .description {
-    position: static;
-    display: flex;
+    top: 13%;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    text-align: center;
+    justify-content: flex-start;
     height: 437px;
   }
 
   .introduction {
     text-align: center;
+    margin-bottom: 5em;
   }
 
   .role {
@@ -257,7 +253,7 @@ Screen = B/w 768px to 1024px*/
   }
 
   .hero {
-    min-height: 812px;
+    min-height: 875px;
     max-height: 100vh;
   }
 }
@@ -316,16 +312,16 @@ Screen = B/w 768px to 1024px*/
   }
 
   .description {
-    position: static;
-    display: flex;
+    top: 10%;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    height: 437px;
+    text-align: center;
+    justify-content: flex-start;
+    height: 450px;
   }
 
   .introduction {
     text-align: center;
+    margin-bottom: 5em;
   }
 
   .hero {
@@ -341,11 +337,9 @@ Screen = B/w 768px to 1024px*/
 
 @media (max-width: 375px) {
   .description {
-    position: static;
-    display: flex;
+    top: 0;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    text-align: center;
     height: 300px;
   }
 
