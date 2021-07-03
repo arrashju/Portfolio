@@ -81,39 +81,64 @@ nav:focus-within {
   width: 6em;
 }
 
-.parallax-container {
-}
-
 .hero {
   position: absolute;
   top: 0;
   left: 0;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
   min-height: 900px;
   max-height: 100vh;
-  z-index: 0;
-  text-align: center;
   margin: 0;
-  width: 100%;
+
+  z-index: 0;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+.img {
+  z-index: 3;
+  margin: 0 auto;
+  padding: 0;
+}
+
 .description {
-  width: 100%;
   position: absolute;
-  font-weight: bold;
+  top: 0;
+  left: 0;
+  width: 100%;
+
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  padding-top: 20px;
-  z-index: 5;
-  text-align: center;
+
+  font-weight: bold;
+  z-index: 2;
+   {
+    /*
+    transform-origin: 0 0;
+    transform: translateZ(-2px) scale(3);
+    */
+  }
+}
+
+ {
+  /*.parallax-container {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}*/
 }
 
 .introduction {
   left: 155px;
-  text-align: center;
+  text-align: left;
 }
 
 .introduction h1 {
@@ -128,6 +153,7 @@ nav:focus-within {
 
 .role {
   right: 155px;
+  text-align: center;
 }
 
 .role h3 {
@@ -152,16 +178,6 @@ button {
 button:hover {
   border: 3px solid #555da2;
   cursor: pointer;
-}
-
-.img {
-  position: absolute;
-  bottom: 0;
-  z-index: 2;
-  left: 50%;
-  transform: translateX(-50%);
-  margin: 0;
-  padding: 0;
 }
 
 @media (min-width: 1281px) {
@@ -236,7 +252,7 @@ Screen = B/w 768px to 1024px*/
   }
 
   .description {
-    top: 13%;
+    top: 8%;
     flex-direction: column;
     text-align: center;
     justify-content: flex-start;
@@ -312,7 +328,7 @@ Screen = B/w 768px to 1024px*/
   }
 
   .description {
-    top: 15%;
+    margin-top: 14em;
     flex-direction: column;
     text-align: center;
     justify-content: flex-start;
@@ -337,7 +353,7 @@ Screen = B/w 768px to 1024px*/
 
 @media (max-width: 375px) {
   .description {
-    top: 0;
+    margin-top: 8em;
     flex-direction: column;
     text-align: center;
     height: 300px;

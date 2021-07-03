@@ -8,16 +8,16 @@ import useWindowSize from '../hooks/useWindowSize'
 
 const Home = () => {
 
-  const [url, setUrl] = useState("hero.png")
+  const hero = "hero.png"
+  const photo = "photo.png"
+
+  const [url, setUrl] = useState({ hero, photo })
   
   const scroll = useNavScroll();
   const size = useWindowSize();
 
-  const small = "hero.png"
-  const large = "hero_small.png"
-
   useEffect(() => {
-    size.width > 480 ? setUrl(large) : setUrl(small)
+    size.width > 767 ? setUrl({ hero, photo }) : setUrl({ hero: "hero_small.png", photo: "photo_small.png" })
   }, [size])
 
   return (
@@ -28,14 +28,14 @@ const Home = () => {
           </div>
       </nav>
       <div className="parallax-container">
-        <div className="hero" style={{ backgroundImage: `url("${url}")` }}>
+        <div className="hero" style={{ backgroundImage: `url("${url.hero}")` }}>
           <div className="img">
             <Image 
-              src='/photo.png'
+              src={`/${url.photo}`}
               alt="Justin photo"
               width={2048}
               height={2038}
-            /> 
+            />
           </div>
         </div>
         <div className="description">
