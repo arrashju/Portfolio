@@ -101,7 +101,6 @@ nav:focus-within {
 }
 
 .img {
-  z-index: 3;
   margin: 0 auto;
   padding: 0;
 }
@@ -117,7 +116,7 @@ nav:focus-within {
   width: 100%;
 
   font-weight: bold;
-  z-index: 2;
+  z-index: 1;
    {
     /*
     transform-origin: 0 0;

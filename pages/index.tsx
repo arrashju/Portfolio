@@ -29,7 +29,7 @@ const Home = () => {
       </nav>
       <div className="parallax-container">
         <div className="hero" style={{ backgroundImage: `url("${url.hero}")` }}>
-          <div className="img">
+        <div className="img">
             <Image 
               src={`/${url.photo}`}
               alt="Justin photo"
