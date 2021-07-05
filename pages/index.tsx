@@ -1,8 +1,6 @@
-import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useState, useEffect } from 'react'
-import { Component } from 'react'
 import useNavScroll from '../hooks/useNavScroll'
 import useWindowSize from '../hooks/useWindowSize'
 

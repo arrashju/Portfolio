@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 function useNavScroll() {
   // Initialize state with undefined width/height so server and client renders match
   // Learn more here: https://joshwcomeau.com/react/the-perils-of-rehydration/
-  const [navScroll, setNavScroll] = useState('scroll-down');
+  const [navScroll, setNavScroll] = useState('scroll-up');
 
   useEffect(() => {
     let previousScrollPosition = 0;
@@ -46,7 +46,7 @@ function useNavScroll() {
     // Add event listener
     window.addEventListener('scroll', (event) => {
       if (mediaQuery && !mediaQuery.matches) {
-        throttle(handleNavScroll, 250)
+        throttle(handleNavScroll, 30)
       }
     });
 
@@ -56,7 +56,7 @@ function useNavScroll() {
     // Remove event listener on cleanup
     return () => window.addEventListener('scroll', (event) => {
       if (mediaQuery && !mediaQuery.matches) {
-        throttle(handleNavScroll, 250)
+        throttle(handleNavScroll, 30)
       }
     });
   }, []); // Empty array ensures that effect is only run on mount
