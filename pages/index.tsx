@@ -44,7 +44,11 @@ const Home = () => {
           </div>
           <div className="role">
             <h3>UX Designer /<br/>Software Developer</h3>
-            <Link href="https://www.linkedin.com/in/justincomplex/" passHref={true}><button>View LinkedIn</button></Link>
+            <Link href="https://www.linkedin.com/in/justincomplex/" passHref={true}>
+              <span>
+                <button>View LinkedIn</button>
+              </span>
+            </Link>
           </div>
         </div>
       </div>
