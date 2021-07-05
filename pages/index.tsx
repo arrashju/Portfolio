@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { useState, useEffect } from 'react'
 import useNavScroll from '../hooks/useNavScroll'
 import useWindowSize from '../hooks/useWindowSize'
-import { Parallax } from 'react-parallax';
+import TextLoop from "react-text-loop";
 
 const Home = () => {
 
@@ -43,7 +43,10 @@ const Home = () => {
             <h1>Justin<br></br>Matthew</h1>
           </div>
           <div className="role">
-            <h3>UX Designer /<br/>Software Developer</h3>
+            <h3>
+              <span className="text-1">Software Developer</span>
+              <span className="text-2">UX Designer</span>
+            </h3>
             <Link href="https://www.linkedin.com/in/justincomplex/" passHref={true}>
               <span>
                 <button>View LinkedIn</button>
