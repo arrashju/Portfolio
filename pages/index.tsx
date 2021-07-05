@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { useState, useEffect } from 'react'
 import useNavScroll from '../hooks/useNavScroll'
 import useWindowSize from '../hooks/useWindowSize'
+import { Parallax } from 'react-parallax';
 
 const Home = () => {
 

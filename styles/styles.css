@@ -172,8 +172,11 @@ button {
 }
 
 button:hover {
-  border: 3px solid #555da2;
+  border: 3px solid #bbbbbb;
   cursor: pointer;
+  background: none;
+  color: white;
+  box-shadow: none;
 }
 
 @media (min-width: 1281px) {
