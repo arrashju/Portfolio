@@ -82,7 +82,7 @@ nav:focus-within {
 }
 
 .hero {
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   width: 100%;
@@ -101,6 +101,8 @@ nav:focus-within {
 }
 
 .img {
+  position: relative;
+  bottom: 0;
   margin: 0 auto;
   padding: 0;
 }
@@ -169,13 +171,6 @@ nav:focus-within {
   }
 }
 
-.parallax-container {
-  width: 100%;
-  height: 100%;
-  overflow-x: hidden;
-  overflow-y: scroll;
-}
-
 .introduction {
   left: 155px;
   text-align: left;
@@ -196,9 +191,9 @@ nav:focus-within {
   text-align: center;
 }
 
-@media (min-width: 450px) {
+@media (min-width: 480px) {
   .role {
-    width: 450px;
+    width: 28em;
   }
 }
 
@@ -207,6 +202,7 @@ nav:focus-within {
   margin: 0 0 10px 0;
   line-height: 1.5;
 }
+
 span {
   width: 100%;
 }
@@ -312,15 +308,15 @@ Screen = B/w 768px to 1024px*/
 
 @media (min-width: 481px) and (max-width: 767px) {
   .img {
-    width: 375px;
+    width: 40em;
   }
 
   .description {
-    top: 8%;
+    top: 15%;
     flex-direction: column;
     text-align: center;
     justify-content: flex-start;
-    height: 437px;
+    height: 40em;
   }
 
   .introduction {
@@ -333,14 +329,14 @@ Screen = B/w 768px to 1024px*/
   }
 
   .hero {
-    min-height: 875px;
+    min-height: 88em;
     max-height: 100vh;
   }
 }
 
 @media (min-width: 540px) and (max-width: 767px) and (orientation: landscape) {
   .img {
-    max-width: 553px;
+    max-width: 50em;
   }
 
   .description {
@@ -355,7 +351,7 @@ Screen = B/w 768px to 1024px*/
   }
 
   .hero {
-    min-height: 481px;
+    min-height: 40em;
     max-height: 100vh;
   }
 
@@ -369,7 +365,7 @@ Screen = B/w 768px to 1024px*/
   }
 
   .img {
-    width: 250px;
+    width: 30em;
   }
 
   button {
@@ -384,11 +380,11 @@ Screen = B/w 768px to 1024px*/
 
 @media (min-width: 375px) and (max-width: 480px) {
   .img {
-    width: 375px;
+    width: 40em;
   }
 
   .role {
-    margin-bottom: 20px;
+    margin-bottom: 10em;
   }
 
   .description {
@@ -405,7 +401,7 @@ Screen = B/w 768px to 1024px*/
   }
 
   .hero {
-    min-height: 812px;
+    min-height: 91em;
     max-height: 100vh;
   }
 
@@ -417,14 +413,14 @@ Screen = B/w 768px to 1024px*/
 
 @media (max-width: 375px) {
   .description {
-    margin-top: 8em;
+    margin-top: 9em;
     flex-direction: column;
     text-align: center;
     height: 300px;
   }
 
   .hero {
-    min-height: 550px;
+    min-height: 98em;
     max-height: 100vh;
   }
 
@@ -433,7 +429,7 @@ Screen = B/w 768px to 1024px*/
   }
 
   .role {
-    margin-bottom: 20px;
+    margin-bottom: 10em;
   }
 
   .img {
