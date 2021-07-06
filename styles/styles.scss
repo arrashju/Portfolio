@@ -1,10 +1,12 @@
+$nav-height: 30em;
+
 @media (min-width: 1281px) {
   html {
-    font-size: 1em;
+    font-size: 1.1em;
   }
 }
 
-@media (min-width: 1025px) and (max-width: 1280px) {
+@media (min-width: 1024px) and (max-width: 1280px) {
   html {
     font-size: 0.8em;
   }
@@ -12,11 +14,11 @@
 
 @media (min-width: 768px) and (max-width: 1024px) {
   html {
-    font-size: 0.6em;
+    font-size: 0.7em;
   }
 }
 
-@media (min-width: 481px) and (max-width: 767px) {
+@media (min-width: 480px) and (max-width: 767px) {
   html {
     font-size: 0.6em;
   }
@@ -119,12 +121,6 @@ nav:focus-within {
 
   font-weight: bold;
   z-index: 1;
-   {
-    /*
-    transform-origin: 0 0;
-    transform: translateZ(-2px) scale(3);
-    */
-  }
 }
 
 .text-1 {
@@ -242,63 +238,48 @@ button:hover {
 
 @media (min-width: 1281px) {
   .img {
-    max-width: 765px;
+    max-width: 43em;
   }
 
   .description {
-    top: 30%;
+    top: 15em;
   }
 
   .hero {
-    max-height: 100vh;
+    height: 50em;
   }
 }
 
 /*Device = Laptops, Desktops
   Screen = B/w 1025px to 1280px*/
 
-@media (min-width: 1025px) and (max-width: 1280px) {
+@media (min-width: 1024px) and (max-width: 1280px) {
   .img {
-    max-width: 553px;
+    max-width: 45em;
   }
 
   .description {
-    top: 20%;
+    top: 15em;
   }
 
   .hero {
     max-height: 100vh;
+    min-height: 55em;
   }
 }
 
 /*Device = Tablets, Ipads (portrait)
   Screen = B/w 768px to 1024px*/
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .img {
-    max-width: 553px;
+    max-width: 45em;
   }
   .description {
-    top: 20%;
+    top: 15em;
   }
   .hero {
-    max-height: 100vh;
-  }
-}
-
-/*Device = Tablets, Ipads (landscape)
-Screen = B/w 768px to 1024px*/
-
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  .img {
-    max-width: 553px;
-  }
-
-  .description {
-    top: 20%;
-  }
-
-  .hero {
+    min-height: 80em;
     max-height: 100vh;
   }
 }
@@ -306,13 +287,13 @@ Screen = B/w 768px to 1024px*/
 /*Device = Low Resolution Tablets, Mobiles (Landscape)
   Screen = B/w 481px to 767px*/
 
-@media (min-width: 481px) and (max-width: 767px) {
+@media (min-width: 480px) and (max-width: 767px) {
   .img {
-    width: 40em;
+    max-width: 40em;
   }
 
   .description {
-    top: 15%;
+    top: 15em;
     flex-direction: column;
     text-align: center;
     justify-content: flex-start;
@@ -329,8 +310,14 @@ Screen = B/w 768px to 1024px*/
   }
 
   .hero {
-    min-height: 88em;
+    min-height: 93em;
     max-height: 100vh;
+  }
+
+  button {
+    width: 9em;
+    height: 2em;
+    font-size: 2.5em;
   }
 }
 
@@ -369,16 +356,16 @@ Screen = B/w 768px to 1024px*/
   }
 
   button {
-    width: 160px;
-    height: 34px;
-    font-size: 13px;
+    width: 9em;
+    height: 2em;
+    font-size: 2.5em;
   }
 }
 
 /*Device = Most of the Smartphones Mobiles (Portrait)
   Screen = B/w 320px to 479px*/
 
-@media (min-width: 375px) and (max-width: 480px) {
+@media (min-width: 374px) and (max-width: 480px) {
   .img {
     width: 40em;
   }
@@ -388,7 +375,7 @@ Screen = B/w 768px to 1024px*/
   }
 
   .description {
-    margin-top: 14em;
+    margin-top: 16em;
     flex-direction: column;
     text-align: center;
     justify-content: flex-start;
@@ -397,30 +384,31 @@ Screen = B/w 768px to 1024px*/
 
   .introduction {
     text-align: center;
-    margin-bottom: 5em;
+    margin-bottom: 6em;
   }
 
   .hero {
-    min-height: 91em;
+    min-height: 97em;
     max-height: 100vh;
   }
 
   button {
-    width: 170px;
-    height: 40px;
+    width: 9em;
+    height: 2em;
+    font-size: 2.5em;
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 374px) {
   .description {
-    margin-top: 9em;
+    margin-top: 17em;
     flex-direction: column;
     text-align: center;
     height: 300px;
   }
 
   .hero {
-    min-height: 98em;
+    min-height: 103em;
     max-height: 100vh;
   }
 
@@ -433,24 +421,24 @@ Screen = B/w 768px to 1024px*/
   }
 
   .img {
-    width: 250px;
+    width: 40em;
   }
 
   button {
-    width: 160px;
-    height: 34px;
-    font-size: 13px;
+    width: 9.2em;
+    height: 2.1em;
+    font-size: 2.4em;
   }
 }
 
 @media (max-width: 250px) {
   .img {
-    width: 100%;
+    max-width: 100%;
   }
 
   button {
-    width: 160px;
-    height: 34px;
-    font-size: 13px;
+    width: 9.2em;
+    height: 2.1em;
+    font-size: 2.4em;
   }
 }
