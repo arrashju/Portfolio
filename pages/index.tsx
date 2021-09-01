@@ -7,16 +7,20 @@ import TextLoop from "react-text-loop";
 
 const Home = () => {
 
-  const hero = "hero.png"
-  const photo = "photo.png"
-
-  const [url, setUrl] = useState({ hero, photo })
+  const [url, setUrl] = useState({ hero: "hero.png", photo: "photo.png" })
   
   const scroll = useNavScroll();
   const size = useWindowSize();
+  const [imageSpecs, setImageSpecs] = useState({width: "2048px", height: "2038px", quality: "75"})
 
   useEffect(() => {
-    size.width > 767 ? setUrl({ hero, photo }) : setUrl({ hero: "hero_small.png", photo: "photo_small.png" })
+    if (size.width > 767) {
+      setUrl({ hero: "hero.png", photo: "photo.png" })
+      setImageSpecs({width: "2048px", height: "2038px"})
+    } else {
+      setUrl({ hero: "hero_small.png", photo: "photo_small.png" })
+      setImageSpecs({width: "770px", height: "767px"})
+    }
   }, [size])
 
   return (
@@ -32,15 +36,16 @@ const Home = () => {
             <Image 
               src={`/${url.photo}`}
               alt="Justin photo"
-              width={2048}
-              height={2038}
+              width={imageSpecs.width}
+              height={imageSpecs.height}
+              quality={imageSpecs.quality}
             />
           </div>
         </div>
         <div className="description">
           <div className="introduction">
             <h4 className="greeting">Hi, I am</h4>
-            <h1>Justin<br></br>Matthew</h1>
+            <h1>Justin<br></br>Ar-Rasheed</h1>
           </div>
           <div className="role">
             <h3>
@@ -56,6 +61,7 @@ const Home = () => {
         </div>
       </div>
       <style jsx>{`
+
       `}</style>
     </>
   )
