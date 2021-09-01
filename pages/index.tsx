@@ -16,10 +16,10 @@ const Home = () => {
   useEffect(() => {
     if (size.width > 767) {
       setUrl({ hero: "hero.png", photo: "photo.png" })
-      setImageSpecs({width: "2048px", height: "2038px"})
+      setImageSpecs({width: "2048px", height: "2038px", quality: "75"})
     } else {
       setUrl({ hero: "hero_small.png", photo: "photo_small.png" })
-      setImageSpecs({width: "770px", height: "767px"})
+      setImageSpecs({width: "770px", height: "767px", quality: "75"})
     }
   }, [size])
 
