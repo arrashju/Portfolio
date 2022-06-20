@@ -215,39 +215,6 @@ span {
   width: 100%;
 }
 
-button {
-  display: inline-block;
-  border: none;
-  box-shadow: 2px 2px 6px rgba(47, 47, 89, 0.25);
-  border-radius: 83px;
-  background: #bbbbbb;
-  font-size: 18px;
-  color: black;
-  font-weight: bold;
-  width: 206px;
-  height: 47px;
-  margin: 0;
-}
-
-button:hover {
-  border: 3px solid #bbbbbb;
-  cursor: pointer;
-  background: none;
-  color: white;
-  box-shadow: none;
-}
-
-@media (max-width: 480px) {
-  button {
-    font-weight: 600;
-  }
-
-  button:hover {
-    border-width: 2px;
-    font-weight: 600;
-  }
-}
-
 @media (min-width: 1281px) {
   .img {
     max-width: 43em;
@@ -325,12 +292,6 @@ button:hover {
     min-height: 93em;
     max-height: 100vh;
   }
-
-  button {
-    width: 9em;
-    height: 2em;
-    font-size: 2.5em;
-  }
 }
 
 @media (min-width: 540px) and (max-width: 767px) and (orientation: landscape) {
@@ -366,12 +327,6 @@ button:hover {
   .img {
     width: 30em;
   }
-
-  button {
-    width: 9em;
-    height: 2em;
-    font-size: 2.5em;
-  }
 }
 
 /*Device = Most of the Smartphones Mobiles (Portrait)
@@ -403,12 +358,6 @@ button:hover {
     min-height: 97em;
     max-height: 100vh;
   }
-
-  button {
-    width: 9em;
-    height: 2em;
-    font-size: 2.5em;
-  }
 }
 
 @media (max-width: 374px) {
@@ -435,22 +384,10 @@ button:hover {
   .img {
     width: 40em;
   }
-
-  button {
-    width: 9.2em;
-    height: 2.1em;
-    font-size: 2.4em;
-  }
 }
 
 @media (max-width: 250px) {
   .img {
     max-width: 100%;
-  }
-
-  button {
-    width: 9.2em;
-    height: 2.1em;
-    font-size: 2.4em;
   }
 }
