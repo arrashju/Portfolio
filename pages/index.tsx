@@ -108,13 +108,6 @@ const Home = () => {
                   <A
                     target="_blank"
                     rel="noopener noreferrer"
-                    href="https://docs.google.com/presentation/d/1kI46665iLCQzJlWwAGI7QagUziQATspqPlznjy0ylHM/edit?usp=sharing"
-                  >
-                    <Item>UX Case Study</Item>
-                  </A>
-                  <A
-                    target="_blank"
-                    rel="noopener noreferrer"
                     href="https://www.linkedin.com/in/justincomplex/"
                   >
                     <Item>LinkedIn</Item>
@@ -125,6 +118,13 @@ const Home = () => {
                     href="https://docs.google.com/document/d/12KaChNMfcocs1ajr_nZp2CbdM9LrqPh3N_nWqTxTvKQ/edit?usp=sharing"
                   >
                     <Item>Resume</Item>
+                  </A>
+                  <A
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://docs.google.com/presentation/d/1kI46665iLCQzJlWwAGI7QagUziQATspqPlznjy0ylHM/edit?usp=sharing"
+                  >
+                    <Item>UX Case Study</Item>
                   </A>
                   <A
                     target="_blank"
