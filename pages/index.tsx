@@ -32,6 +32,10 @@ const Home = () => {
     document.addEventListener("mousedown", handleOutsideClick);
   }, []);
 
+  useEffect(() => {
+    console.log(hideDropdown);
+  }, [hideDropdown]);
+
   const handleDropdown = (e) => {
     e.preventDefault();
 
@@ -85,7 +89,7 @@ const Home = () => {
               <span className="text-2">UX Designer</span>
             </h3>
             <span>
-              <DropdownGroup>
+              <DropdownGroup ref={node}>
                 <Button onClick={handleDropdown} hideDropdown={hideDropdown}>
                   <>
                     Portfolio
@@ -104,7 +108,7 @@ const Home = () => {
                     </Svg>
                   </>
                 </Button>
-                <DropDown hideDropdown={hideDropdown} ref={node}>
+                <DropDown hideDropdown={hideDropdown}>
                   <A
                     target="_blank"
                     rel="noopener noreferrer"
