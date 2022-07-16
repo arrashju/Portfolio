@@ -76,7 +76,6 @@ const Home = () => {
             <h1>
               Justin<br></br>Ar-Rasheed
             </h1>
-            <h4 className="greeting">Understanding the Big Picture</h4>
           </div>
           <div className="role">
             <h3>
