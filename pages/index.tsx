@@ -35,7 +35,7 @@ const Home = () => {
   const handleDropdown = (e) => {
     e.preventDefault();
 
-    setHideDropdown(!hideDropdown);
+    setHideDropdown((hideDropdown) => !hideDropdown);
   };
 
   const handleOutsideClick = (e) => {
@@ -47,7 +47,9 @@ const Home = () => {
       //@ts-ignore
       !node.current.contains(e.target)
     ) {
-      setHideDropdown(true);
+      if (hideDropdown == false) {
+        setHideDropdown(true);
+      }
     }
   };
 
