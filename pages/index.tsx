@@ -117,6 +117,13 @@ const Home = () => {
                   >
                     <Item>LinkedIn</Item>
                   </A>
+                  <A
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://docs.google.com/document/d/12KaChNMfcocs1ajr_nZp2CbdM9LrqPh3N_nWqTxTvKQ/edit?usp=sharing"
+                  >
+                    <Item>Resume</Item>
+                  </A>
                 </DropDown>
               </DropdownGroup>
             </span>
