@@ -108,7 +108,7 @@ const Home = () => {
                     rel="noopener noreferrer"
                     href="https://docs.google.com/presentation/d/1kI46665iLCQzJlWwAGI7QagUziQATspqPlznjy0ylHM/edit?usp=sharing"
                   >
-                    <Item>Case Study</Item>
+                    <Item>UX Case Study</Item>
                   </A>
                   <A
                     target="_blank"
@@ -123,6 +123,13 @@ const Home = () => {
                     href="https://docs.google.com/document/d/12KaChNMfcocs1ajr_nZp2CbdM9LrqPh3N_nWqTxTvKQ/edit?usp=sharing"
                   >
                     <Item>Resume</Item>
+                  </A>
+                  <A
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://would-you-rather-two.vercel.app/"
+                  >
+                    <Item>React/Redux</Item>
                   </A>
                 </DropDown>
               </DropdownGroup>
